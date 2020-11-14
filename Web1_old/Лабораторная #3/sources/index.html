@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta Charset="utf-8">
+	<title>ЧМ и ВЭБ</title>
+	<link rel ="stylesheet" href="resources/style.css">
+</head>
+<body>
+	<header>
+		<div id="top-menu">
+			<ul>
+				<li><a href="index.html">1</a></li>
+				<li><a href="">2</a></li>
+				<li><a href="">3</a></li>
+				<li><a href="">4</a></li>
+				<li><a href="">5</a></li>
+				<li><a href="">6</a></li>
+				<li class="top-empty-button"></li>
+				<li class="top-empty-button"></li>
+				<li><a href="audio+video.html">ВМ</a></li>
+				<li id="mm"><button id="butt-menu">O</button>
+					<div id="right-menu" >
+						<ul >
+							<li>Теорія біомедичних сигналів, курсова робота - 100(А)</li>
+							<li class="right-menu-blau">Філософія - 95(А)</li>
+							<li>Фізика - 86(В)</li>
+							<li class="right-menu-blau">Операційні системи - 95(А)</li>
+							<li>Теорія ймовірностей - 85(В)</li>
+							<li class="right-menu-blau">Теорія біомедичних сигналів - 100(А)</li>
+							<li>Алгоритмізація та програмування - 89(В)</li>
+							<li class="right-menu-blau">Математичний аналіз - 85(В)</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div id="body-block">
+		<div id="content-block" >
+			<div style="height: 280px">
+				<h1>Первое задание</h1>
+				<div class="content" >
+					<ul>
+						<li >
+							<span>x1</span>
+							<input class="text-value" type="text" onchange="x1 = this.value">
+						</li>
+						<li>
+							<span>x2</span>
+							<input class="text-value" type="text" onchange="x2 = this.value">
+						</li>
+						<li>
+							<span>x</span>
+							<input class="text-value" type="text" onchange="x = this.value">
+						</li>
+					</ul>
+				</div>
+				<div class="content" >
+					<ul>
+						<li >
+							<button id="op01" onclick="butt_radio(0,1)">*</button>
+						</li>
+						<li>
+							<button id="op02" onclick="butt_radio(0,2)">/</button>
+						</li>
+						<li>
+							<button id="op03" onclick="butt_radio(0,3)">√</button>
+						</li>
+						<li>
+							<button id="op04" onclick="butt_radio(0,4)">^</button>
+						</li>
+					</ul>
+				</div>
+				<div class="content" >
+					<ul>
+						<li >
+							<span>y1</span>
+							<input class="text-value" type="text" onchange="y1 = this.value">
+						</li>
+						<li>
+							<span>y2</span>
+							<input class="text-value" type="text" onchange="y2 = this.value">
+						</li>
+						<li>
+							<span>y</span>
+							<input class="text-value" type="text" onchange="y = this.value">
+						</li>
+					</ul>
+				</div>
+				<div class="content" >
+					<ul>
+						<li >
+							<button id="op11" onclick="butt_radio(1,1)">*</button>
+						</li>
+						<li>
+							<button id="op12" onclick="butt_radio(1,2)">/</button>
+						</li>
+						<li>
+							<button id="op13" onclick="butt_radio(1,3)">√</button>
+						</li>
+						<li>
+							<button id="op14" onclick="butt_radio(1,4);">^</button>
+						</li>
+					</ul>
+				</div>
+				<button class="result" onclick="result1()">Расчитать</button>
+				<br><br><br><br><br><br><br>
+				<div class="content" >
+					<ul>
+						<li >
+							<span>X</span>
+							<span id="res1-X" class="span-result"></span>
+						</li>
+						<li>
+							<span>Y</span>
+							<span id="res1-Y" class="span-result"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="content" >
+					<ul>
+						<li >
+							<span>Δx</span>
+							<span id="res1-dx" class="span-result"></span>
+						</li>
+						<li>
+							<span>Δy</span>
+							<span id="res1-dy" class="span-result"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="content" >
+					<ul>
+						<li >
+							<span>Δx</span>
+							<span id="res1-bdx" class="span-result"></span>
+						</li>
+						<li>
+							<span>Δy</span>
+							<span id="res1-bdy" class="span-result"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="content" >
+					<ul>
+						<li >
+							<span>δx</span>
+							<span id="res1-rx" class="span-result"></span>
+						</li>
+						<li>
+							<span>δy</span>
+							<span id="res1-ry" class="span-result"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="content" >
+					<ul>
+						<li >
+							<span>δx</span>
+							<span id="res1-orx" class="span-result"></span>
+						</li>
+						<li>
+							<span>δy</span>
+							<span id="res1-ory" class="span-result"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div style="height: 280px">
+				<h1>Второе задание</h1>
+				<div class="content" >
+					<ul>
+						<li >
+							<span>x</span>
+							<input class="text-value" type="text" onchange="v1 = this.value">
+						</li>
+						<li>
+							<span>δΔ</span>
+							<input class="text-value" type="text" onchange="er1 = this.value">
+						</li>
+					</ul>
+				</div>
+				<div class="content" >
+					<ul>
+						<li >
+							<button id="op21" onclick="butt_radio(2,1)">0.1</button>
+						</li>
+						<li>
+							<button id="op25" onclick="butt_radio(2,5)">0.5</button>
+						</li>
+					</ul>
+				</div>
+				<div class="content" >
+					<ul>
+						<li >
+							<span>y</span>
+							<input class="text-value" type="text" onchange="v2 = this.value">
+						</li>
+						<li>
+							<span>δΔ</span>
+							<input class="text-value" type="text" onchange="er2 = this.value">
+						</li>
+					</ul>
+				</div>
+				<div class="content" >
+					<ul>
+						<li >
+							<button id="op31" onclick="butt_radio(3,1)">0.1</button>
+						</li>
+						<li>
+							<button id="op35" onclick="butt_radio(3,5)">0.5</button>
+						</li>
+					</ul>
+				</div>
+				<button class="result" onclick="result2(v1,er1,opr[2],1); result2(v2,er2,opr[3],2);">Расчитать</button>
+				<br><br><br><br><br><br><br>
+				<div class="content" >
+					<ul>
+						<li >
+							<span>X</span>
+							<span id="res2-1" class="span-result"></span>
+						</li>
+						<li>
+							<span>Y</span>
+							<span id="res2-2" class="span-result"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div style="height: 330px">
+				<h1>Третье задание</h1>
+				<div class="content" >
+					<ul>
+						<li >
+							<span>x</span>
+							<input class="text-value" type="text" onchange="vx = this.value">
+						</li>
+					</ul>
+				</div>
+				<div class="content" >
+					<ul>
+						<li >
+							<button id="op41" onclick="butt_radio(4,1)">0.1</button>
+						</li>
+						<li>
+							<button id="op45" onclick="butt_radio(4,5)">0.5</button>
+						</li>
+					</ul>
+				</div>
+				<div class="content" >
+					<ul>
+						<li >
+							<span>y</span>
+							<input class="text-value" type="text" onchange="vy = this.value">
+						</li>
+					</ul>
+				</div>
+				<div class="content" >
+					<ul>
+						<li >
+							<button id="op51" onclick="butt_radio(5,1)">0.1</button>
+						</li>
+						<li>
+							<button id="op55" onclick="butt_radio(5,5)">0.5</button>
+						</li>
+					</ul>
+				</div>
+				<button class="result" onclick="result3(vx,opr[4],1);result3(vy,opr[5],2)">Расчитать</button>
+				<br><br><br><br><br><br><br>
+				<div class="content" >
+					<ul>
+						<li >
+							<span>Δx</span>
+							<span id="res3-d1" class="span-result"></span>
+						</li>
+						<li>
+							<span>δx</span>
+							<span id="res3-r1" class="span-result"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="content" >
+					<ul>
+						<li >
+							<span>Δy</span>
+							<span id="res3-d2" class="span-result"></span>
+						</li>
+						<li>
+							<span>δy</span>
+							<span id="res3-r2" class="span-result"></span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="footer-block">
+			<ul>
+				<li><a href="https://www.instagram.com/grasirius"><img src="resources/inst.png"> Mein instagram</a></li>
+				<li><a href="https://t.me/VojtTieg295i"><img src="resources/telg.png"> Mein telegram</a></li>
+			</ul>
+			<p style="color: white; margin-left:20px">Права не защищены, никакие ©2020-2020 Asir.ua</p>
+		</div>
+	</div>
+	<footer>
+	</footer>
+	<script  src ="resources/js.js"></script>
+</body>
+</html>
+
+
+<!--

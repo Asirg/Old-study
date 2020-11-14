@@ -1,0 +1,147 @@
+html, body{
+	background: #415;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+ul{
+	list-style: none;
+	margin: 0; 
+	padding: 0;
+	width: 100%;
+}
+h1,a,#butt-menu{
+	color: #4ca8ed;
+}
+a{
+	text-decoration: none;
+}
+
+span, button, #top-menu a,#content-block input.text-value{
+	outline: 2px solid #bdddf4; 
+	outline-offset: -2px;
+}
+#right-menu ,#content-block span.span-result,#top-menu{
+    background: white;
+}
+/*/\ Шапка /\///////////////////////////////////////////*/
+#top-menu{
+	position: fixed; /*Фиксирования позиции*/
+	left: 0px;
+	top: 0px; 
+	height: 80px;
+	width: 100%;
+	border-bottom: 2px solid #0378ae;
+}
+#top-menu li{
+	float: left;
+	margin: 10px 0.20%;
+	width: 9.6%;  
+	height: 60px;
+    background: #eee;
+}
+#top-menu a, #butt-menu{
+	display: block;
+	height: 60px;
+
+	font-size: 350%;/*Параметры текста*/
+	text-align: center;
+}
+#top-menu li:hover a, #top-menu button:hover{ 
+	color: #fff;  
+	background-color: #6aa7d5;
+}
+#top-menu li#mm:hover #right-menu { 
+	display: block; 
+}
+#top-menu li.top-empty-button{
+	background: white;
+}
+#butt-menu{
+	background: #eee;
+	width: 100%;
+	padding: 0;
+	font-family: initial;
+}
+#right-menu  li{
+	height: initial;
+	margin: initial;
+	float: initial;
+	background: initial;
+	width: 100%;
+	padding: 10px 20px 10px 20px;
+}
+li #right-menu li.right-menu-blau,#content-block button.result{
+	background: #bdddf4;
+}
+#right-menu{
+	display: none;
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	right: 0;
+	top:80px;
+	font-size: 120%;
+	border-left: 2px solid #bdddf4;
+	border-bottom: 2px solid #bdddf4;
+}
+#body-block{
+	height: 100%;
+}
+#content-block{
+	padding: 1.5%;
+	background: white;
+	box-sizing: border-box;
+	min-height: 100%;
+	margin: 100px 10% 20px 10%; 
+	outline: 2px solid #0378ae; 
+	outline-offset: -2px;
+}
+#content-block li{
+	padding: 2px;
+}
+#content-block span{
+	font-size: 30px; 
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	float: left;
+	
+	background: #eee;
+	min-width: 22%;
+}
+#content-block span.span-result{
+	height: 24.5px;
+	margin-bottom: 5px;
+
+	font-size: 20px;
+	text-align: left;
+	padding: 5px;
+	width: 60%;
+
+	overflow-x: hidden;
+}
+#content-block input.text-value{
+	height: 30px;
+	width: 75%;
+}
+#content-block button{
+	height: 25px;
+	width: 12%;
+}
+#content-block div.content{
+	width: 20%;
+	float: left; 
+}
+#footer-block{
+	background: #000;
+	width: 100%;
+	height: 130px;
+	padding: 10px;
+	border-top: 2px solid #0378ae;
+	margin: 0;
+}
+img {
+	width: 2.2%;
+}

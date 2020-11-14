@@ -1,0 +1,98 @@
+html,body
+{
+	margin:0;
+	padding: 0;
+	background: #111;
+}
+header
+{
+	user-select: none;
+	font-size: 80px;
+	text-align: center;
+	background: black;
+	color: white;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+
+.preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#space-invader {
+	box-shadow: 0 0 0 1em red,
+	0 1em 0 1em red,
+	-2.5em 1.5em 0 .5em red,
+	2.5em 1.5em 0 .5em red,
+	-3em -3em 0 0 red,
+	3em -3em 0 0 red,
+	-2em -2em 0 0 red,
+	2em -2em 0 0 red,
+	-3em -1em 0 0 red,
+	-2em -1em 0 0 red,
+	2em -1em 0 0 red,
+	3em -1em 0 0 red,
+	-4em 0 0 0 red,
+	-3em 0 0 0 red,
+	3em 0 0 0 red,
+	4em 0 0 0 red,
+	-5em 1em 0 0 red,
+	-4em 1em 0 0 red,
+	4em 1em 0 0 red,
+	5em 1em 0 0 red,
+	-5em 2em 0 0 red,
+	5em 2em 0 0 red,
+	-5em 3em 0 0 red,
+	-3em 3em 0 0 red,
+	3em 3em 0 0 red,
+	5em 3em 0 0 red,
+	-2em 4em 0 0 red,
+	-1em 4em 0 0 red,
+	1em 4em 0 0 red,
+	2em 4em 0 0 red;
+	background: red;
+	width: 1em;
+	height: 1em;
+	overflow: hidden;
+
+	animation: preloader-rotate 2s infinite linear;
+}
+
+@keyframes preloader-rotate {
+  12.5% {
+    transform: rotate(60deg)scale(2);
+  }
+  25% {
+    transform: rotate(-60deg)scale(3);
+  }
+  37.5% {
+    transform: rotate(60deg)scale(3);
+  }
+  50% {
+    transform: rotate(-60deg)scale(2);
+  }
+  62.5% {
+    transform: rotate(60deg)scale(2);
+  }
+  75% {
+    transform: rotate(-60deg)scale(3);
+  }
+  87.5% {
+    transform: rotate(60deg)scale(3);
+  }
+  100% {
+    transform: rotate(-60deg)scale(3);
+  }
+}
+.loaded .preloader {
+  display: none;
+}

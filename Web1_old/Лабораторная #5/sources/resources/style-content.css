@@ -1,0 +1,117 @@
+.entry-field{
+	margin-bottom: 2%;
+}
+.entry-field span{
+	font-size: 40px;
+	display: block;
+	user-select:none;
+}
+.entry-field input{
+	display: block;
+	border: 2px solid #4ca8ed;
+	color: #4ca8ed;
+	height: 46px;
+	font-size: 30px;
+	padding-left: 5px;
+}
+/*      ПОЛЯ     */
+#flex-input{
+	display: flex;
+	flex-flow: wrap;
+}
+#flex-input div{
+	margin-right: 20px;
+}
+#flex-input input{
+	display: inline;
+	width: 80px;
+	padding: 0;
+	text-align: center;
+}
+#flex-input span{
+	display: inline;
+}
+#flex-input .name-familie{
+	width: 300px;
+}
+/*            ФЛЕКC          */
+fieldset{
+	height: 150px;
+	width: 200px;
+	font-size: 40px;
+	border: 2px solid #4ca8ed;
+	user-select:none;
+}
+fieldset input.radio-gender{
+	display: inline-block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+	height: 30px;
+	width: 30px;
+  transition: 0.25s all linear;
+  outline: none;
+	border: 2px solid #4ca8ed;
+  border-radius: 50%;
+}
+fieldset input.radio-gender:checked {
+  border: 4px solid #4ca8ed;
+  background: #a7d7fc;
+  height: 38px;
+	width: 38px;
+	margin-right: 15px;
+}
+.label-gender{
+	font-size: 30px;
+}
+/*      РАДИО     */
+#fiscal-code-button{
+	display: block;
+
+	color: #fff;
+	height: 56px;
+	font-size: 40px;
+	padding-left: 5px;
+	background: #4ca8ed;
+	outline: none;
+	transition:0.2s;
+}
+#fiscal-code-button:hover{
+	background-color: #79b4e2;
+	color: #fff;  
+}
+#fiscal-code-button:active{
+	background-color: #2577b5;
+	color: #fff;  
+}
+/*      КНОПКА     */
+.output-div span{
+	font-size: 40px;
+	user-select:none;
+	margin-right: 10px;
+}
+.output-div span.output-text {
+	user-select:inherit;
+}
+#output-butt-fiscall-code{
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	width: 50px;
+	vertical-align: bottom;
+	outline: 2px solid #0378ae; 
+	outline-offset: -2px;
+	background: #4ca8ed; 
+	color: white;
+	font-size: 30px;
+}
+#output-butt-fiscall-code:hover{
+	background-color: #79b4e2;
+	color: #fff;  
+}
+#output-butt-fiscall-code:active{
+	background-color: #2577b5;
+	color: #fff;  
+}
+/*      РЕЗУЛЬТАТ     */

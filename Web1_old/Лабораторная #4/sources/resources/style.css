@@ -1,0 +1,59 @@
+html, body, #body-block{
+	background: #415;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	font-family: calibri;
+}
+a, h1{
+	color: #4ca8ed;
+	text-decoration: none;
+}
+h1{
+text-align: center;
+}
+/*		 ОСНОВНОЙ КОНТЕТ БЛОК			*/
+#content-block{
+	background: white;
+	outline: 2px solid #0378ae; 
+	outline-offset: -2px;
+
+	min-height: 100%;
+	overflow: hidden;
+	padding: 2% 10%;
+	margin: 30px 10% 20px 10%; 
+
+	font-size: 150%;
+}
+.button-menu{
+	background: #eee;
+	outline: 2px solid #bdddf4; 
+	outline-offset: -2px;
+
+	margin-top: 20px;
+	padding: 15px;
+
+	text-align: center;
+	font-size: 200%;
+}
+.button-menu:hover{   	/*	Анимация наведения	*/
+	background-color: #6aa7d5;
+	color: #fff;  
+}
+/*			НИЖНЯЯ ПАНЕЛЬ			*/
+#footer-block{
+	background: #000;
+	border-top: 2px solid #0378ae;
+}
+#footer-block ul{
+	margin: 0;
+	padding: 1%;
+}
+#footer-block img {
+	width: 2.2%;
+}
+#footer-block p{
+	color: white;
+	margin-left:5%; 
+	margin-bottom: 0;
+}

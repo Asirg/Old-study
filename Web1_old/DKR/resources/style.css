@@ -1,0 +1,226 @@
+html, body
+{
+	margin:0;
+	padding: 0;
+	height: 100%;
+	font-family: calibri;
+}
+body
+{
+	background:white;
+	overflow-x: hidden;
+}
+#Home{
+	height: 46vw;
+	background-image: url(gallery/Home.png);
+	background-size: 100vw;
+	padding: 1% 0 0 0;
+}
+#Home .home-content
+{
+	margin: 0 20vw;
+	height: 100%;
+}
+#logo img
+{
+	width: 8vw;
+}
+#Home .header
+{	
+	display: flex;
+	justify-content: space-between;
+}
+#Home .header-menu
+{
+	display: flex;
+	align-items: center;
+}
+#Home .header-menu a
+{
+	margin-left:4vw;
+	font-size: 1vw;
+	height: 50%;
+
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+#Home .header-menu a:last-child
+{
+	color: #2ecc71;
+	background: white;
+	width: 7vw;
+	border: 0.5vw solid white;
+	border-radius: 80px;
+}
+#Home .center{
+	margin-top: 8vw;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	color: white;
+}
+#Home .center-header
+{
+	margin: 2vw 0 1vw 0;
+	font-size: 3.8vw;
+	font-weight: 10;
+}
+#Home .center-main
+{
+	width: 54%;
+	font-size: 1.08vw;
+}
+#Home .center-footer{ 
+	margin-top: 7%;
+}
+#Home .center-footer a{ 
+	margin-right: 2.5%;
+}
+
+
+.content
+{
+	margin: 0 20vw;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	color: #5a5a5a;
+}
+.center-header
+{
+	font-size: 2.6vw;
+	font-weight: 10;
+}
+.center-header .center-gr
+{
+	color: #2ecc71;
+}
+.center-main
+{
+	font-size: 1.00vw;
+	font-weight: 10;
+	line-height: 1.55vw;
+}
+
+#Feutures{
+	height: 44vw;
+	background-image: url(gallery/Feutures.png);
+	background-size: 100vw;
+}
+#Feutures .content
+{
+	align-items: flex-end;
+}
+#Feutures .center-header
+{
+	margin-top: 15vw;
+}
+#Feutures .center-main
+{
+	margin-left: 5%;
+	padding: 0 4.5% 0 0;
+	margin-top: 1.5vw;
+	width: 39%;
+}
+
+
+#Reviews{
+	height: 45vw;
+	background-image: url(gallery/Reviews.png);
+	background-size: 100vw;
+}
+#Reviews .content
+{
+	align-items: center;
+}
+#Reviews .center-header
+{
+	margin-top: 3vw;
+}
+
+#Reviews .center-main
+{
+	text-align: center;
+	margin-left: 5%;
+	padding: 0 7.5% 0 0;
+	margin-top: 1.5vw;
+	width: 75%;
+}
+
+#Blog{
+	height: 38vw;
+	background-image: url(gallery/Blog.png);
+	background-size: 100vw;
+}
+#Blog .content
+{
+	justify-content: center;
+}
+#Blog .center-header
+{
+	margin-top: 3vw;
+}
+
+#Blog .center-main
+{
+	padding: 0 7.5% 0 0;
+	margin-top: 1.5vw;
+	width: 41%;
+}
+
+#Support{
+	height: 22vw;
+	background-image: url(gallery/Support.png);
+	background-size: 100vw;
+}
+#Support .content
+{
+	align-items: center;
+	color: white;
+}
+#Support .center-header
+{
+	margin-top: 5vw;
+}
+#Support .center-main
+{
+	text-align: center;
+
+	margin-top: 1.5vw;
+	width: 75%;
+}
+#Support .content a
+{
+	
+	background: white;
+	width: 10vw;
+	border: 0.5vw solid white;
+	border-radius: 80px;
+	text-decoration: none;
+	font-size: 1vw;
+	margin-top: 2.5vw;
+	color: #2ecc71;
+	text-align: center;
+	text-decoration: none;
+}
+
+
+
+
+#Form{
+	height: 22vw;
+	background-image: url(gallery/form.png);
+	background-size: 100vw;
+}
+#Form .content
+{
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+#Form .content
+{
+	align-items: center;
+	color: white;
+}

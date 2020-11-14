@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta Charset="utf-8">
+	<title>Робота з js</title>
+	<link rel ="stylesheet" href="resources/style.css">
+	<link rel ="stylesheet" href="resources/style-content.css">
+	<script src="resources/js.js"></script>
+</head>
+<body>
+	<div id="body-block">
+		<div id="content-block" >
+			<h1>Введіть Інформацію про людину</h1>
+			<div class="entry-field">
+				<div id="flex-input">
+					<div>
+						<span>Ім'я:</span>
+						<input class="name-familie" type="text" value="Asir" onchange="Name = this.value">
+					</div>
+					<div>
+						<span>Прізвище:</span>
+						<input class="name-familie" type="text" value="Muminov"onchange="Surname = this.value">
+					</div>
+				</div>
+			</div>
+				<fieldset>
+					<legend>Стать:</legend>
+				 	<input class="radio-gender" type="radio" id="male" name="gender" value="male" onclick="isMale = true" checked>
+ 				 	<label class="label-gender" for="male">Male</label><br>
+ 				 	<input class="radio-gender" type="radio" id="female" name="gender" value="female" onclick="isMale =false">
+ 				 	<label class="label-gender" for="female">Female</label><br>
+ 				 </fieldset>
+			<div class="entry-field">
+				<span>Дата народження:</span>
+				<div id="flex-input">
+					<div>
+						<span>День:</span>
+						<input type="text" value="13" maxlength="2" onchange="day_OfBirth = this.value">
+					</div>
+					<div>
+						<span>Місяць:</span>
+						<input type="text" value="2" maxlength="2" onchange="month_OfBirth = this.value">
+					</div>
+					<div>
+						<span>Рік:</span>
+						<input type="text" value="2000" maxlength="4" onchange="year_OfBirth = this.value">
+					</div>
+				</div>
+			</div>
+			<button id="fiscal-code-button" onclick="output_fiscal_code()">Розрахувати Фіскальний код</button>
+			<br>
+			<div class="output-div">
+				<span>Фіскальний код: </span>
+				<span class="output-text" id="fiscal-code-output"></span>
+			</div>
+			<h1>Числа Харшад</h1>
+			<div class="entry-field">
+				<div id="flex-input">
+					<div>
+						<span>Число:</span>
+						<input class="name-familie" type="text" value="" onchange="Output_harshard(Number(this.value))">
+					</div>
+						<div class="output-div">
+							<span>Число Харшад - </span>
+							<span class="output-text"  id="harshard-output"></span>
+						</div>
+				</div>
+			</div>
+			<h1>Зростання послідовних чисел</h1>
+			<div class="entry-field">
+				<div id="flex-input">
+					<div>
+						<span>Число:</span>
+						<input class="name-familie" type="text" value="" onchange="asced = String(this.value);">
+						<button id="output-butt-fiscall-code" onclick="ascending()">Об</button>
+					</div>
+						<div class="output-div">
+							<span>Зростає та послідовне - </span>
+							<span class="output-text"  id="ascending-output"></span>
+						</div>
+				</div>
+			</div>
+			<h1 id ="console"></h1>
+		</div>
+	<div id="footer-block">
+			<ul>
+				<li><a href="https://www.instagram.com/grasirius"><img src="resources/inst.png"> Mein instagram</a></li>
+				<li><a href="https://t.me/VojtTieg295i"><img src="resources/telg.png"> Mein telegram</a></li>
+				<li><p>Права не защищены, никакие ©2020-2020 Asir.ua</p></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
