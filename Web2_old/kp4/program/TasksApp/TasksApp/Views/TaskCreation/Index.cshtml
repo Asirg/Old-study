@@ -1,0 +1,19 @@
+﻿@model TaskCreationViewModel
+
+@{
+    ViewData["Title"] = "Task creation";
+}
+
+<h2>Creation of new task</h2><br />
+
+<form asp-controller="Home" asp-action="AddTask" asp-route-authorName="@User.Identity.Name" method="post">
+    <div class="md-form">
+        <textarea asp-for="TaskName" placeholder="Title of your task" id="form7" class="md-textarea form-control" rows="3" required="" style="resize: none;"></textarea>
+    </div><br />
+    <div class="form-group">
+        <textarea asp-for="TaskDescription" placeholder="Description of your task" class="form-control rounded-0" id="exampleFormControlTextarea1" rows="10" required="" style="resize: none;"></textarea>
+    </div>
+    <div class="text-center">
+        <button type="submit" class=" btn btn-block send-button tx-tfm center-block" style="width: 30%;">Create new task</button>
+    </div>
+</form>

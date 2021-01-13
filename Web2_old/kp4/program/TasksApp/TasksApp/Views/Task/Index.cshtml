@@ -1,0 +1,51 @@
+﻿@model TaskViewModel
+
+@{
+    ViewData["Title"] = Model.Task.Name;
+}
+
+<h2>@Model.Task.Name</h2><br />
+<h5>@Model.Task.DescriptionText</h5><br />
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+<section class="content-item" id="comments">
+    <div class="container">
+        <div class="row">
+            <div>
+                <form asp-controller="Task" asp-action="AddAnswer" asp-route-taskId="@Model.Task.TaskId" asp-route-authorName="@User.Identity.Name" method="post">
+                    <fieldset>
+                        <div class="row">
+                            <div class="form-group col-xs-12 col-sm-9 col-lg-10">
+                                <textarea asp-for="AnswerText" class="form-control" id="message" placeholder="Write your answer" required="" style="resize: none; width: 50%;"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="btn btn-normal pull-left">Submit</button>
+                </form>
+
+                <br /><h3 style="margin-top: 5%; margin-bottom: 2%;">@Model.AnswersAmount Answers</h3>
+
+                @if (Model.Task.Answers != null)
+                {
+                    @foreach (var answer in Model.Task.Answers)
+                    {
+                        <div class="media">
+                            <div class="media-body">
+                                <h4 class="media-heading"><strong>@answer.AuthorName</strong></h4>
+                                <p>@answer.Text</p>
+                                <ul class="list-unstyled list-inline media-detail pull-left">
+                                    <li>Posted: @answer.PostingTime.ToString("hh:mm")</li>
+                                </ul>
+                                <a asp-controller="Task"
+                                   asp-action="RemoveAnswer"
+                                   asp-route-answerId="@answer.AnswerId"
+                                   asp-route-taskId="@Model.Task.TaskId">delete
+                                </a>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</section>

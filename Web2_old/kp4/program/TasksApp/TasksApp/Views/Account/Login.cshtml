@@ -1,0 +1,31 @@
+﻿@model LoginViewModel
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<body style="margin-top: 5%;">
+    <div class="container" style="text-align: center;">
+        <h2>Login</h2>
+        <div class="row">
+            <div class="col-1 center-block" style="width: 30%;">
+                <div class="myform form ">
+                    <form asp-controller="Account" asp-action="Login" method="post">
+                        <div class="form-group">
+                            <input asp-for="UserName" type="text" class="form-control my-input" placeholder="Name">
+                            <br /><span asp-validation-for="UserName"></span>
+                        </div>
+                        <div class="form-group">
+                            <input asp-for="Password" type="password" class="form-control my-input" placeholder="Password">
+                            <br /><span asp-validation-for="Password"></span>
+                        </div>
+                        <div class="text-center ">
+                            <button type="submit" class=" btn btn-block send-button tx-tfm">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

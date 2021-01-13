@@ -1,0 +1,43 @@
+﻿@model TaskListViewModel
+
+@{
+    ViewData["Title"] = "Tasks";
+}
+
+<h2>Tasks</h2><br />
+
+<a asp-controller="TaskCreation" asp-action="Index" class="btn btn-block center-block" style="width: 30%;">
+    Create new task
+</a>
+
+<table class="table" style="margin-top: 5%;">
+    @foreach (var task in Model.TaskList)
+    {
+        <tr>
+            <td>
+                <a asp-controller="Task"
+                   asp-action="Index"
+                   asp-route-taskId="@task.TaskId">
+                    <span style="display:block;text-overflow: ellipsis;width: 200px;overflow: hidden; white-space: nowrap;">
+                        @task.Name
+                    </span>
+                </a>
+            </td>
+            <td>
+                <span style="display:block;text-overflow: ellipsis;width: 200px;overflow: hidden; white-space: nowrap;">
+                    Author: @task.AuthorName
+                </span>
+            </td>
+            <td>
+                Posted: @task.PostingTime.ToString("hh:mm, dd.MM.yyyy")
+            </td>
+            <td>
+                <a asp-controller="Home"
+                   asp-action="RemoveTask"
+                   asp-route-taskId="@task.TaskId">
+                    Remove task
+                </a>
+            </td>
+        </tr>       
+    }
+</table>
