@@ -7,7 +7,7 @@
 
 ### Web2_Front_End
 - programming languages: C#
-- tools: ASP.NET, MS SQL Server, redis
+- tools: ASP.NET, MS SQL Server, redis, docker
 - decscription: KPI course. Back-end.
 
 ### Program to prepare for ZNO
