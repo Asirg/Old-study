@@ -1,0 +1,73 @@
+[
+  {
+    "name": "\u0422\u0435\u0441\u0442\u043E\u0432\u0438\u0439 \u043A\u043E\u0440\u0438\u0441\u0442\u0443\u0432\u0430\u0447",
+    "password": "1",
+    "CurrentSection": [
+      2,
+      1
+    ],
+    "TestingAlgebra": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "TestingGeometry": [
+      1,
+      0
+    ],
+    "NumberTrialZNO": 0,
+    "AlgebraScores": [
+      6,
+      0,
+      0,
+      0
+    ],
+    "AlgebraRating": [
+      3,
+      0,
+      0,
+      0
+    ],
+    "ReAlgebraScores": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "ReAlgebraRating": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "GeometryScores": [
+      8,
+      0
+    ],
+    "GeometryRating": [
+      4,
+      0
+    ],
+    "ReGeometryScores": [
+      0,
+      0
+    ],
+    "ReGeometryRating": [
+      0,
+      0
+    ],
+    "Trial1Scores": [
+      0,
+      0
+    ],
+    "Trial2Scores": [
+      0,
+      0
+    ],
+    "Trial3Scores": [
+      0,
+      0
+    ]
+  }
+]
