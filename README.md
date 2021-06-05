@@ -5,7 +5,7 @@
 - tools: html, css, vue.js
 - decscription: KPI course. Front-end.
 
-### Web2_Front_End
+### Web2_Back_End
 - programming languages: C#
 - tools: ASP.NET, MS SQL Server, redis, docker
 - decscription: KPI course. Back-end.
